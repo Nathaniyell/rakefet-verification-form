@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 16px;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(36, 161, 210);
+}
+h4{
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    direction: rtl;
+    color: rgb(12, 12, 134);
+}
+form{
+    width: 100%;
+    padding: 1rem;
+    font-display: grid;
+    place-items: center;
+    width: 90%;
+    background: rgba(225, 225, 225, 0.2);
+}
+@media (min-width:640px) {
+    form{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+input, button, select{
+    display: block;
+    width: 100%;
+    margin:30px 0 ;
+}
+input{
+    color: rgb(12, 12, 134);
+    
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid rgb(223, 223, 223);
+    padding: 10px;
+    outline: none;
+    background: inherit;
+    direction: rtl;
+}
+select{
+    height: 40px;
+    direction: rtl;
+    
+}
+button{
+    margin-block: 30px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    background: rgb(12, 12, 134);
+        padding: 10px;
+    cursor: pointer;
+}
+
+/* Change the color of the placeholder text */
+::placeholder {
+    color: rgb(12, 12, 134); /* Change this to your desired color */
+}
+
+/* Change the color of the placeholder text in Firefox */
+input:-moz-placeholder {
+    color: rgb(12, 12, 134);
+}
+
+/* Change the color of the placeholder text in WebKit/Blink browsers */
+input::-webkit-input-placeholder {
+    color: rgb(12, 12, 134);
+}
+
+/* Change the color of the placeholder text in Edge */
+input:-ms-input-placeholder {
+    color: rgb(12, 12, 134);
+}
